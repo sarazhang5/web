@@ -1,0 +1,116 @@
+.pic img{
+    width:100rem;
+}
+.pic li{
+    list-style:none;
+}
+article{
+    font-size:1.2rem;
+    width:100rem;
+    border:0.1rem solid #ccc;
+    height:60rem;
+}
+article .loc{
+    color:#333;
+}
+article .loc a{
+   color:#333;
+   text-decoration:none;
+}
+article .loc a:hover{
+   text-decoration:underline;
+}
+article .left{
+    width:25rem;
+    float:left;
+    padding:1rem;
+    background-color:#fff;
+}
+article .left h3{
+    font-size:1.4rem;
+    padding:0.6rem;
+    background-color:rgb(153,204,255);
+    width:20rem;
+    border:0.1rem solid rgba(0,102,204,0.4);
+    border-radius:0.6rem;
+    color:rgb(0,51,102);
+}
+article .left li{
+    list-style:none;
+}
+article .left a{
+    text-decoration:none;
+    color:#000;
+}
+article .left .list li{
+    width:18rem;
+    border-bottom:0.1rem solid #ccc;
+    padding-left:1.2rem;
+    padding-bottom:0.2rem;
+    list-style-image:url(img/3.1.png);
+    list-style-position: inside;
+    margin-left:1.2rem;
+}
+article .left .list li:hover{
+    list-style-image:url(img/3.png);
+    border-bottom:0.1rem solid #aaa;
+}
+article .left .list a:hover{
+    color:rgb(0,51,102);
+}
+article .left .list a{
+    font-size:1.3rem;
+    font-weight:bold;
+    line-height:2;
+    margin-left:0.8rem;
+}
+article .left .new-trend{
+
+}
+article .left .new-trend li{
+    width:17rem;
+    padding-left:0.8rem;
+    line-height:2;
+    list-style-image:url(img/3.1.png);
+    margin-left:1.5rem;
+    list-style-position:outside;
+}
+article .left .new-trend li:hover{
+    list-style-image:url(img/3.png);
+}
+article .left .new-trend a:hover{
+    color:rgb(0,51,102);
+    text-decoration:underline;
+}
+article .right{
+    width:73rem;
+    float:left;
+    background-color:#fff;
+}
+article .right .company-infor{
+    height:50rem;
+    border-left:0.1rem solid #ccc;
+    padding-left:1rem;
+}
+article .right hground{
+    text-align:center;
+}
+article .right h4{
+    width:70rem;
+    border-bottom:0.1rem solid #ccc;
+    padding-bottom:2rem;
+}
+article .right p{
+    padding:1rem;
+}
+article .right p:last-child{
+    width:70rem;
+    border-bottom:0.1rem solid #ccc;
+    padding-bottom:2rem;
+}
+article .next{
+    float:right;
+}
+footer{
+    clear:both;
+}

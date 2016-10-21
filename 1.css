@@ -1,0 +1,219 @@
+/* 
+* @Author: Marte
+* @Date:   2016-07-29 17:55:37
+* @Last Modified by:   Marte
+* @Last Modified time: 2016-10-21 16:08:05
+*/
+html{
+    font-size:62.5%;
+    font-family:Helvetica;
+}
+body{
+     background:linear-gradient(to bottom,rgb(224,249,255),rgb(255,255,255));
+}
+li{
+    list-style:none;
+}
+#contain{
+    width:100rem;
+    margin:0 auto;
+}
+header{
+    width:100rem;
+}
+header .logo img{
+    display:inline-block;
+}
+header .logo hground{
+    display:inline-block;
+}
+header .logo hground h1{
+    color:rgb(0,102,153);
+}
+header .logo hground h2{
+    color:#999;
+    font-weight:normal;
+}
+nav{
+    width:100rem;
+    background-color:rgb(0,102,204);
+    border:0.1rem solid #ccc;
+    border-radius:1rem;
+}
+nav li{
+    list-style:none;
+    display:inline-block;
+}
+nav li a{
+    font-size:1.5rem;
+    display:inline-block;
+    text-decoration:none;
+    padding:1.5rem;
+    color:#fff;
+    font-weight:bold;
+}
+nav li span{
+    padding-left:2rem;
+    color:#fff;
+    opacity:0.3;
+    font-weight:bold;
+}
+nav li .active{
+    color:rgb(204,255,0);
+}
+nav li a:hover{
+    text-decoration:underline;
+    color:rgb(204,255,0);
+}
+article{
+    width:100rem;
+    position: relative;
+    overflow:hidden;
+}
+article .info{
+    float:left;
+    width:35rem;
+    font-size:1.2rem;
+}
+article .info address{
+    color:rgb(0,102,204);
+    font-style:normal;
+}
+article .pho li img{
+    width:65rem;
+    height:25rem;
+}
+article .pho{
+    float:right;
+    width:65rem;
+    height:28rem;
+    margin:0;
+    padding:0;
+}
+article .num{
+    position:absolute;
+    bottom:2rem;
+    right:2rem;
+}
+article .num li{
+    box-sizing:border-box;
+    list-style:none;
+    display:inline-block;
+    padding:0.4rem 0.8rem;
+    border-radius:10rem;
+    font-size:0.8rem;
+}
+article .num .act{
+    background:rgb(0,102,204);
+}
+.ken{
+    height:25rem;
+    margin-top:1.5rem;
+    border:0.1rem solid #999;
+}
+.case{
+    margin-top:1rem;
+    clear:both;
+    position:relative;
+    width:100rem;
+    font-size:1.2rem;
+    border:0.1rem solid #999;
+}
+.case .new,.case .intro{
+    position:absolute;
+    top:0;
+    width:25rem;
+    height:100%;
+}
+.case .new{
+    left:0;
+}
+.case .new li{
+    list-style:none;
+    padding:0.3rem;
+}
+.case .new li a{
+    text-decoration:none;
+    color:#333;
+}
+.case .new li a:hover{
+    text-decoration:underline;
+    color:rgb(0,102,204);
+}
+.case .new li time{
+    float:right;
+    color:#666;
+}
+.case .new .wire,.case .fix .wire,.case .intro .wire {
+    border-bottom:0.1rem solid #ccc;
+    margin-bottom:2rem;
+}
+.case .new .wire h3,.case .fix .wire h3,.case .intro .wire h3{
+    display:inline-block;
+    margin-bottom:0;
+    border-bottom:0.2rem solid blue;
+}
+.case .new .wire a span,.case .intro .wire a span{
+    padding-left:14rem;
+    margin-bottom:0;
+    color:#666;
+}
+.case .fix .wire a span{
+    padding-left:35rem;
+    margin-bottom:0;
+}
+.case .new .wire a,.case .intro .wire a,.case .fix .wire a{
+    text-decoration:none;
+    color:#666;
+}
+.case .new .wire a span:hover,.case .fix .wire a span:hover,.case .intro .wire a span:hover{
+    text-decoration:underline;
+    color:rgb(0,102,204);  
+}
+.case .intro{
+    right:0;
+}
+.case .intro p{
+    padding:0.5rem;
+    color:#333;
+}
+.case .fix{
+    margin:0 26rem;
+    height:100%;
+}
+.case .fix figure{
+    display:inline-block;
+}
+#scrollarea{
+    border:0.1rem solid #ccc;
+    width:100rem;
+    overflow:hidden;
+}
+#scrollarea .slide{
+    width:3990rem;
+}
+#scrollarea #area1{
+    list-style:none;
+    width:108rem;
+}
+#scrollarea  #area2{
+    list-style:none;
+}
+#scrollarea li{
+    list-style:none;
+    float:left;
+}
+#scrollarea img{
+    width:20rem;
+    height:16rem;
+    padding-right:1rem;
+}
+footer{
+    width:99.95rem;
+    margin:0  0.7rem;
+    text-align:center;
+    font-size:1.2rem;
+    background-color:rgb(224,249,255);
+    padding:0.03rem 0;
+    margin-left:-0.01rem;
+}

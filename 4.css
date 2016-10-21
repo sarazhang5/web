@@ -1,0 +1,119 @@
+.pic img{
+    width:100rem;
+}
+.pic li{
+    list-style:none;
+}
+article{
+    font-size:1.2rem;
+    width:100rem;
+    border:0.1rem solid #ccc;
+    height:55rem;
+}
+article .loc{
+    color:#333;
+}
+article .loc a{
+   color:#333;
+   text-decoration:none;
+}
+article .loc a:hover{
+   text-decoration:underline;
+}
+article .left{
+    width:25rem;
+    float:left;
+    padding:1rem;
+    background-color:#fff;
+}
+article .left h3{
+    font-size:1.4rem;
+    padding:0.6rem;
+    background-color:rgb(153,204,255);
+    width:20rem;
+    border:0.1rem solid rgba(0,102,204,0.4);
+    border-radius:0.6rem;
+    color:rgb(0,51,102);
+}
+article .left li{
+    list-style:none;
+}
+article .left a{
+    text-decoration:none;
+    color:#000;
+}
+article .left .list li{
+    width:18rem;
+    border-bottom:0.1rem solid #ccc;
+    padding-left:1.2rem;
+    padding-bottom:0.2rem;
+    list-style-image:url(img/3.1.png);
+    list-style-position: inside;
+    margin-left:1.2rem;
+}
+article .left .list li:hover{
+    list-style-image:url(img/3.png);
+    border-bottom:0.1rem solid #aaa;
+}
+article .left .list a:hover{
+    color:rgb(0,51,102);
+}
+article .left .list a{
+    font-size:1.3rem;
+    font-weight:bold;
+    line-height:2;
+    margin-left:0.8rem;
+}
+article .left .new-trend{
+
+}
+article .left .new-trend li{
+    width:17rem;
+    padding-left:0.8rem;
+    line-height:2;
+    list-style-image:url(img/3.1.png);
+    margin-left:1.5rem;
+    list-style-position:outside;
+}
+article .left .new-trend li:hover{
+    list-style-image:url(img/3.png);
+}
+article .left .new-trend a:hover{
+    color:rgb(0,51,102);
+    text-decoration:underline;
+}
+article .right{
+    width:72rem;
+    float:left;
+    border-bottom:0.1rem solid #ccc;
+    background-color:#fff;
+}
+article .right .fixcase img{
+    width:20rem;
+    height:20rem;
+    border:0.1rem solid #ccc;
+}
+article .right .fixcase figure{
+    display:inline-block;
+    width:20rem;
+}
+article .right .fixcase figcaption{
+    text-align:center;
+}
+article .right .fixcase figcaption a{
+    text-decoration:none;
+    color:#666;
+}
+article .right .fixcase figcaption a:hover{
+    text-decoration:underline;
+    color:rgb(0,51,102);
+}
+article .next{
+    float:right;
+}
+article .next p{
+    text-align:right;
+}
+footer{
+    clear:both;
+}
