@@ -2,9 +2,31 @@
 * @Author: Marte
 * @Date:   2016-10-25 20:50:37
 * @Last Modified by:   Marte
-* @Last Modified time: 2016-10-29 22:39:59
+* @Last Modified time: 2016-11-02 21:10:51
 */
 window.onload=function(){
+     //登陆
+     var oHeader=document.getElementsByTagName('header')[0];
+     var oHeading=oHeader.getElementsByTagName('div')[0];
+     var oLogin=oHeading.getElementsByTagName('div')[4];
+     oLogin.onclick=function(){
+        alert('a');
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     //轮播图
     var os=document.getElementById('scrollImg');
     var aUl=os.getElementsByTagName('ul');
@@ -57,4 +79,28 @@ window.onload=function(){
 var oHeader=document.getElementsByTagName('header')[0];
      oHeader.style.transform="scale(1.0)";
      oHeader.style.transition="1s";
+
+//文字选项卡
+var oServices=document.getElementById('services');
+var aUl=oServices.getElementsByTagName('ul');
+var aLiS=aUl[0].getElementsByTagName('li');
+var aLiSnum=aUl[1].getElementsByTagName('li');
+var nums=0;
+function moveText(){
+    if(nums==aLiS.length){
+        nums=0;
+    }
+    for(var i=0;i<aLiS.length;i++){
+        aLiS[i].style.display="none";
+        aLiSnum[i].style.background="#ccc"
+    }
+    aLiS[nums].style.display="block"
+    aLiSnum[nums].style.background="#01a4e4";
+    nums++
+}
+moveText();
+setInterval(moveText,2000);
+
+
+
 }
