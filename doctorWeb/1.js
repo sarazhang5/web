@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2016-10-25 20:50:37
 * @Last Modified by:   Marte
-* @Last Modified time: 2016-11-04 16:04:05
+* @Last Modified time: 2016-11-04 21:15:06
 */
 window.onload=function(){
      //弹出登陆框并加遮罩层
@@ -22,28 +22,46 @@ window.onload=function(){
          }
     //点击取消按钮 登陆框隐藏
      aP[1].onclick=function(){
-        formLogin.style.transform="translateY(0)";
+        formLogin.style.transform="translateY(-500px)";
         oShade.style.display="none";
         document.body.style.overflow='visible';
         document.documentElement.style.overflow='visible';
         document.body.style.overflowX='hidden';
         document.documentElement.style.overflowX='hidden';
+        oOk.style.display="none";
+        oRember.style.padding="0.5px 8px";
      }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    //是否记住按钮
+    var oRember=document.getElementById('borderS');
+    var oOk=oRember.getElementsByTagName('span')[0];
+    var flag=true;
+    oRember.onclick=function(){
+        if(flag){
+            oOk.style.display="inline-block";
+            this.style.padding="0.5px 1.5px";
+            flag=false;
+        }else{
+            oOk.style.display="none";
+            this.style.padding="0.5px 8px";
+            flag=true;
+        }
+    }
+//input获取到焦点时，清空内容.失去焦点时，内容还原。
+       var aInput=document.getElementsByTagName('input');
+         for(var i=0;i<aInput.length;i++){
+            var oldValue=null;
+            aInput[i].onfocus=function(){
+                oldValue=this.value;
+                this.value="";
+            }
+            aInput[i].onblur=function(){
+                if(this.value==""){
+                this.value=oldValue;
+                }else{
+                    this.value=this.value;
+                }
+            }
+         }
     //轮播图
     var os=document.getElementById('scrollImg');
     var aUl=os.getElementsByTagName('ul');
