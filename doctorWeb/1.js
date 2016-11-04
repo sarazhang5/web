@@ -2,15 +2,32 @@
 * @Author: Marte
 * @Date:   2016-10-25 20:50:37
 * @Last Modified by:   Marte
-* @Last Modified time: 2016-11-02 21:10:51
+* @Last Modified time: 2016-11-04 16:04:05
 */
 window.onload=function(){
-     //登陆
+     //弹出登陆框并加遮罩层
      var oHeader=document.getElementsByTagName('header')[0];
      var oHeading=oHeader.getElementsByTagName('div')[0];
      var oLogin=oHeading.getElementsByTagName('div')[4];
+     var formLogin=document.getElementById('login');
+     var oShade=document.getElementById('shade');
+     var aP=formLogin.getElementsByTagName('p');
      oLogin.onclick=function(){
-        alert('a');
+         formLogin.style.transform="translateY(0)";
+         oShade.style.display="block";
+         //弹出遮罩层的时候禁止滚动
+         document.body.style.overflow='hidden';
+         document.body.style.height='100%';
+         document.documentElement.style.overflow='hidden'
+         }
+    //点击取消按钮 登陆框隐藏
+     aP[1].onclick=function(){
+        formLogin.style.transform="translateY(0)";
+        oShade.style.display="none";
+        document.body.style.overflow='visible';
+        document.documentElement.style.overflow='visible';
+        document.body.style.overflowX='hidden';
+        document.documentElement.style.overflowX='hidden';
      }
 
 
