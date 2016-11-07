@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2016-10-25 20:50:37
 * @Last Modified by:   Marte
-* @Last Modified time: 2016-11-04 21:15:06
+* @Last Modified time: 2016-11-06 19:39:25
 */
 window.onload=function(){
      //弹出登陆框并加遮罩层
@@ -12,8 +12,23 @@ window.onload=function(){
      var formLogin=document.getElementById('login');
      var oShade=document.getElementById('shade');
      var aP=formLogin.getElementsByTagName('p');
+     var oRember=document.getElementById('borderS');
+     var oOk=oRember.getElementsByTagName('span')[0];
+      //弹出注册框加遮罩层
+     var oSign=oHeading.getElementsByTagName('div')[3];
+     var oSignup=document.getElementById('Signup');
+     var aPsign=oSignup.getElementsByTagName('p');
+     var oRembers=document.getElementById('borderSs');
+     var oOks=oRembers.getElementsByTagName('span')[0];
+
      oLogin.onclick=function(){
-         formLogin.style.transform="translateY(0)";
+        formMove(formLogin);
+    };
+     oSign.onclick=function(){
+        formMove(oSignup);
+     }
+     function formMove(obj){
+         obj.style.transform="translateY(0)";
          oShade.style.display="block";
          //弹出遮罩层的时候禁止滚动
          document.body.style.overflow='hidden';
@@ -22,27 +37,37 @@ window.onload=function(){
          }
     //点击取消按钮 登陆框隐藏
      aP[1].onclick=function(){
-        formLogin.style.transform="translateY(-500px)";
+         formDisplay(formLogin,oOk,oRember);
+     };
+     aPsign[1].onclick=function(){
+        formDisplay(oSignup,oOks,oRembers);
+     }
+     function formDisplay(obj,ok,remberBorder){
+        obj.style.transform="translateY(-500px)";
         oShade.style.display="none";
         document.body.style.overflow='visible';
         document.documentElement.style.overflow='visible';
         document.body.style.overflowX='hidden';
         document.documentElement.style.overflowX='hidden';
-        oOk.style.display="none";
-        oRember.style.padding="0.5px 8px";
+        ok.style.display="none";
+        remberBorder.style.padding="0.5px 8px";
      }
     //是否记住按钮
-    var oRember=document.getElementById('borderS');
-    var oOk=oRember.getElementsByTagName('span')[0];
     var flag=true;
     oRember.onclick=function(){
+        remberButton(oOk,oRember);
+    }
+    oRembers.onclick=function(){
+        remberButton(oOks,oRembers);
+    }
+    function remberButton(ok,remberBorder){
         if(flag){
-            oOk.style.display="inline-block";
-            this.style.padding="0.5px 1.5px";
+            ok.style.display="inline-block";
+            remberBorder.style.padding="0.5px 1.5px";
             flag=false;
         }else{
-            oOk.style.display="none";
-            this.style.padding="0.5px 8px";
+            ok.style.display="none";
+            remberBorder.style.padding="0.5px 8px";
             flag=true;
         }
     }

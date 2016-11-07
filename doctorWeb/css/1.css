@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2016-10-25 20:50:24
 * @Last Modified by:   Marte
-* @Last Modified time: 2016-11-04 20:51:31
+* @Last Modified time: 2016-11-06 20:45:45
 */
 body{
     overflow-x:hidden;
@@ -78,7 +78,7 @@ li{
 .login .glyphicon,.login span,.signup span,.signup .glyphicon,.search .glyphicon{
     color:#ffffff;
 }
-#login{
+#login,#Signup{
     border:1px solid #ccc;
     width:500px;
     height:500px;
@@ -95,17 +95,20 @@ li{
     padding-left:40px;
     padding-top:30px;
 }
-#login h2{
+#Signup{
+   padding-top:20px; 
+}
+#login h2,#Signup h2{
     color:#fda616;
     font-size:24px;
     word-spacing:4px;
     font-weight:normal;
     letter-spacing:1px;
 }
-#login label{
+#login label,#Signup label{
     letter-spacing:1px;
 }
-#login p:nth-of-type(2){
+#login p:nth-of-type(2),#Signup p:nth-of-type(2){
     float:right;
     margin-top:-420px;
     padding-right:30px;
@@ -113,10 +116,13 @@ li{
     cursor:pointer;
     color:#ccc;
 }
-#login p:nth-of-type(2):hover{
+#Signup p:nth-of-type(2){
+    margin-top:-450px;
+}
+#login p:nth-of-type(2):hover,#Signup p:nth-of-type(2):hover{
     color:#000000;
 }
-#login p:nth-of-type(1){
+#login p:nth-of-type(1),#Signup p:nth-of-type(1){
     text-align:center;
     width:400px;
     height:30px;
@@ -127,21 +133,21 @@ li{
     margin-top:25px;
     font-weight:bolder;
 }
-#login  span{
+#login  span,#Signup  span{
     color:#aaa;
     word-spacing:4px;
 }
-#login  #borderS{
+#login  #borderS,#Signup #borderSs{
     padding:0.5px 8px;
     border:2px solid #fda616;
     margin-right:4px;
     cursor:pointer;
 }
-#login .glyphicon-ok{
+#login .glyphicon-ok,#Signup .glyphicon-ok{
     display:none;
     color:#000000;
 }
-#login input{
+#login input,#Signup input{
     width:400px;
     height:40px;
     margin:0 auto;
@@ -149,17 +155,17 @@ li{
     border:none;
     border:1px solid #ccc;
 }
-#login input:hover{
+#login input:hover,#Signup input:hover{
    border-color:#fda616;
 }
-#login input:nth-of-type(3){
+#login input:nth-of-type(3),#Signup input:nth-of-type(4){
     background-color:#666;
     color:#ffffff;
     font-size:20px;
     font-weight:100;
     transition:1s;
 }
-#login input:nth-of-type(3):hover{
+#login input:nth-of-type(3):hover,#Signup input:nth-of-type(4):hover{
     background-color:#fda616;
 }
 #shade{
