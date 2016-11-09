@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2016-10-25 20:50:37
 * @Last Modified by:   Marte
-* @Last Modified time: 2016-11-09 19:31:27
+* @Last Modified time: 2016-11-09 21:10:19
 */
 window.onload=function(){
      //弹出登陆框并加遮罩层
@@ -237,21 +237,6 @@ function scrollLoad(model){
    var  webHeight=document.documentElement.clientHeight||document.body.clientHeight; 
    return(mHeight<webHeight)?true:false;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
