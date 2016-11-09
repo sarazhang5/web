@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2016-10-25 20:50:24
 * @Last Modified by:   Marte
-* @Last Modified time: 2016-11-06 20:45:45
+* @Last Modified time: 2016-11-09 16:46:50
 */
 body{
     overflow-x:hidden;
@@ -179,6 +179,47 @@ li{
     opacity:0.3;
     display:none;
 }
+#search{
+    width:100%;
+    height:100%;
+    background-color:#01a4e4;
+    position:fixed;
+    top:0;
+    left:0;
+    display:none;
+    z-index:100;
+}
+#search .searchShade{
+    width:500px;
+    height:30px;
+    border-bottom:1px solid #ffffff;
+    margin:0 auto;
+    margin-top:400px;
+}
+#search .searchShade .glyphicon-remove{
+    float:right;
+    color:#ffffff;
+    padding:20px;
+    margin-top:-80px;
+    font-size:20px;
+    background-color:#000000;
+    cursor:pointer;
+}
+#search .searchShade .glyphicon-search{
+    padding-right:5px;
+}
+#search .searchShade input{
+    border:none;
+    color:#ffffff;
+    width:400px;
+    height:25px;
+    word-spacing:2px;
+    background-color:#01a4e4;
+}
+#search .searchShade span{
+    color:#ffffff;
+    font-size:18px;
+}
 .nv1{
     width:1200px;
     height:100px;
@@ -316,12 +357,13 @@ li{
     width:1200px;
     height:400px;
     margin:0 auto;
-    border:1px solid red;
     color:red;
 }
 #welcome img{
     float:left;
     margin-top:50px;
+    transform:rotateY(180deg);
+    transition:3s;
 }
 #welcome .info{
     height:100%;
@@ -332,6 +374,8 @@ li{
     text-align:center;
     background-color:#01a4e4;
     color:#ffffff;
+    transform:rotateY(180deg);
+    transition:3s;
 }
 #welcome .info ul{
     width:350px;
@@ -353,17 +397,19 @@ li{
 #welcome .info ul li span:hover{
     transform:translateX(10px);
 }
-.form{
+#welcome .form{
     width:300px;
     float:right;
     text-align:center;
     margin-top:40px;
     margin-right:0px;
+    transform:rotateY(180deg);
+    transition:3s;
 }
-.form h2{
+#welcome .form h2{
     color:#01a4e4;
 }
-.form input{
+#welcome .form input{
     display:block;
     width:300px;
     height:35px;
@@ -375,7 +421,7 @@ li{
     border-color:#fff;
     border:1px solid #01a4e4;
 }
-.form input:nth-of-type(5){
+#welcome .form input:nth-of-type(5){
     width:100px;
     height:40px;
     background-color:#fda30e;
@@ -383,7 +429,7 @@ li{
     color:#ffffff;
     font-size:20px;
 }
-.form input:nth-of-type(5):hover{
+#welcome .form input:nth-of-type(5):hover{
     background-color:#01a4e4;
 }
 #services{
@@ -399,9 +445,9 @@ li{
     padding-top:50px;
     width:1200px;
     height:780px;
-    border:1px solid red;
     margin:0 auto;
     text-align:center;
+    overflow:hidden;
 }
 #services .services h2{
     color:#01a4e4;
@@ -413,6 +459,8 @@ li{
     padding-top:20px;
     line-height:25px;
     text-align:left;
+    transform:translateY(-600px);
+    transition:2s;
 }
 #services .services .bestSerives p{
     margin-top:40px;
@@ -460,8 +508,9 @@ li{
     text-align:center;
     margin-left:45px;
     padding-top:20px;
-    border:1px solid red;
     line-height:25px;
+    transform:translateY(1000px);
+    transition:3s;
 }
 #services .services .vol1-child1:hover .cross-shaped,#services .services .vol1-child2:hover .apple,#services .services .vol2-child1:hover .cross-shaped,#services .services .vol2-child2:hover .apple{
     border-radius:100px;
@@ -481,22 +530,20 @@ li{
     float:left;
     margin-left:103px;
     text-align:center;
-    border:1px solid red;
     padding-top:20px;
     line-height:25px;
+    transform:translateY(-1000px);
+    transition:2s;
 }
 #services .services .vol1 .vol1-child1,#services .services .vol1 .vol1-child2{
-    border:1px solid green;
     height:300px;
 }
 #services .services .vol2 .vol2-child1,#services .services .vol2 .vol2-child2{
-    border:1px solid green;
     height:300px;
 }
 #team{
     width:1200px;
     height:700px;
-    border:1px solid red;
     margin:0 auto;
     text-align:center;
     padding-top:80px;
@@ -515,11 +562,12 @@ li{
 }
 #team .team{
     float:left;
+    transform:scale(0.5);
+    transition:3s;
 }
 #team .team .team-child{
     position: relative;
     margin-right:47px;
-    border:1px solid blue;
 }
 #team .team .team-child .contactStyle{
     position: absolute;
@@ -542,13 +590,18 @@ li{
 #team .team .team-child .contactStyle span:hover{
     background-color:#fda30e;
 }
+#c{
+    width:100%;
+    height:400px;
+    background-color:#eee;
+}
 #capab {
     width:1200px;
     height:400px;
     margin:0 auto;
     text-align:center;
-    border:1px solid red;
     padding-top:50px;
+    overflow:hidden;
 }
 #capab .capab h2{
     color:#01a4e4;
@@ -568,6 +621,14 @@ li{
 }
 #capab .capab .capab1,#capab .capab .capab2,#capab .capab .capab3,#capab .capab .capab4{
     padding-top:40px;
+}
+#capab .capab .capab1,#capab .capab .capab3{
+   transform:translateY(-400px);
+   transition:1.5s;
+}
+#capab .capab .capab2,#capab .capab .capab4{
+   transform:translateY(400px);
+   transition:3s;
 }
 #capab .capab .capab1 p:nth-of-type(2),#capab .capab .capab2 p:nth-of-type(2),#capab .capab .capab3 p:nth-of-type(2),#capab .capab .capab4 p:nth-of-type(2){
    color:#000000;
