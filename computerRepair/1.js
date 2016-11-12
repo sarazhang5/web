@@ -23,4 +23,7 @@ $('#scrollarea').hover(function(){
     timer=setInterval(imgMarquee,30)
 })
 
+
+
+
 })

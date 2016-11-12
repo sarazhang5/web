@@ -1,0 +1,427 @@
+/* 
+* @Author: Marte
+* @Date:   2016-11-10 12:08:44
+* @Last Modified by:   Marte
+* @Last Modified time: 2016-11-10 17:38:47
+*/
+body{
+    overflow-x:hidden;
+}
+body,header,img{
+    margin:0;
+    padding:0;
+    font-family:'Arial Narrow';
+}
+header{
+    width:100%;
+    height:50px;
+    line-height:50px;
+    background-color:#01a4e4;
+}
+li{
+    list-style:none;
+}
+.heading{
+    width:1200px;
+    margin:0 auto;
+}
+
+.heading .container1{
+    border-left:1px solid #ffffff;
+    border-color:rgba(250,250,250,0.5);
+    width:180px;
+    float:left;
+
+}
+.heading .container1 .glyphicon,.heading .email .glyphicon{
+    border-style:solid;
+    border-width:1px;
+    border-color:rgba(250,250,250,0.5);
+    padding:5px;
+    color:#ffffff;
+    font-size:12px;
+    border-radius:5px;
+    margin:0 10px;
+    margin-left:20px;
+}
+.heading .container1 span,.email span{
+    color:#ffffff;
+    transition:1s;
+}
+.heading .email:hover span{
+    color:#fba311;
+}
+.email{
+    border-left:1px solid #ffffff;
+    border-right:1px solid #ffffff;
+    border-color:rgba(250,250,250,0.5);
+    cursor:pointer;
+    width:200px;
+    float:left;
+}
+
+.login,.signup,.search{
+    float:right;
+    border:1px solid rgba(250,250,250,0.5);
+    padding:6px 13px;
+    line-height:0px;
+    margin-top:10px;
+    margin-right:10px;
+    cursor:pointer;
+}
+.login .glyphicon,.login span,.signup span,.signup .glyphicon,.search .glyphicon{
+    color:#ffffff;
+}
+#login,#Signup{
+    border:1px solid #ccc;
+    width:500px;
+    height:500px;
+    line-height:40px;
+    margin:0 auto;
+    position: absolute;
+    top:0;
+    left:40%;
+    transform:translateY(-500px);
+    text-align:left;
+    z-index:101;
+    background-color:#ffffff;
+    transition:1s;
+    padding-left:40px;
+    padding-top:30px;
+}
+#Signup{
+   padding-top:20px; 
+}
+#login h2,#Signup h2{
+    color:#fda616;
+    font-size:24px;
+    word-spacing:4px;
+    font-weight:normal;
+    letter-spacing:1px;
+}
+#login label,#Signup label{
+    letter-spacing:1px;
+}
+#login p:nth-of-type(2),#Signup p:nth-of-type(2){
+    float:right;
+    margin-top:-420px;
+    padding-right:30px;
+    font-size:24px;
+    cursor:pointer;
+    color:#ccc;
+}
+#Signup p:nth-of-type(2){
+    margin-top:-450px;
+}
+#login p:nth-of-type(2):hover,#Signup p:nth-of-type(2):hover{
+    color:#000000;
+}
+#login p:nth-of-type(1),#Signup p:nth-of-type(1){
+    text-align:center;
+    width:400px;
+    height:30px;
+    line-height:20px;
+    padding-left:0;
+    word-spacing:3px;
+    letter-spacing:0.8px;
+    margin-top:25px;
+    font-weight:bolder;
+}
+#login  span,#Signup  span{
+    color:#aaa;
+    word-spacing:4px;
+}
+#login  #borderS,#Signup #borderSs{
+    padding:0.5px 8px;
+    border:2px solid #fda616;
+    margin-right:4px;
+    cursor:pointer;
+}
+#login .glyphicon-ok,#Signup .glyphicon-ok{
+    display:none;
+    color:#000000;
+}
+#login input,#Signup input{
+    width:400px;
+    height:40px;
+    margin:0 auto;
+    color:#ccc;
+    border:none;
+    border:1px solid #ccc;
+}
+#login input:hover,#Signup input:hover{
+   border-color:#fda616;
+}
+#login input:nth-of-type(3),#Signup input:nth-of-type(4){
+    background-color:#666;
+    color:#ffffff;
+    font-size:20px;
+    font-weight:100;
+    transition:1s;
+}
+#login input:nth-of-type(3):hover,#Signup input:nth-of-type(4):hover{
+    background-color:#fda616;
+}
+#shade{
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:100;
+    background-color:#ccc;
+    opacity:0.3;
+    display:none;
+}
+#search{
+    width:100%;
+    height:100%;
+    background-color:#01a4e4;
+    position:fixed;
+    top:0;
+    left:0;
+    display:none;
+    z-index:100;
+}
+#search .searchShade{
+    width:500px;
+    height:30px;
+    border-bottom:1px solid #ffffff;
+    margin:0 auto;
+    margin-top:400px;
+}
+#search .searchShade .glyphicon-remove{
+    float:right;
+    color:#ffffff;
+    padding:20px;
+    margin-top:-80px;
+    font-size:20px;
+    background-color:#000000;
+    cursor:pointer;
+}
+#search .searchShade .glyphicon-search{
+    padding-right:5px;
+}
+#search .searchShade input{
+    border:none;
+    color:#ffffff;
+    width:400px;
+    height:25px;
+    word-spacing:2px;
+    background-color:#01a4e4;
+}
+#search .searchShade span{
+    color:#ffffff;
+    font-size:18px;
+}
+.nv1{
+    width:1200px;
+    height:100px;
+    line-height:100px;
+    margin:0 auto;
+    clear:both;
+}
+.nv1{
+    position: relative;
+}
+.nv1 em{
+    font-style:normal;
+    color:#000;
+}
+.nv1 span{
+    font-size:35px;
+    letter-spacing:1px;
+    position: absolute;
+    left:40px;
+    color:#fba311;
+}
+.nv1 ul{
+    float:right;
+}
+.nv1 ul li{
+    float:left;
+    margin-top:28px;
+    padding:0 20px;
+    margin-right:15px;
+    border:2px solid #fba311;
+    line-height:40px;
+}
+#photo{
+    width:100%;
+    height:180px;
+    overflow:hidden;
+    background-image:url(../img/banner33.jpg);
+}
+#contact{
+    width:100%;
+    height:500px;
+}
+#contact .contact{
+    width:1200px;
+    height:500px;
+    margin:0 auto;
+    text-align:center;
+}
+#contact .contact h2{
+    font-size:40px;
+    color:#01a4e4;
+    letter-spacing:1.5px;
+}
+#contact .contact .form{
+    width:550px;
+    height:400px;
+    float:left;
+    text-align:left;
+    margin-left:20px;
+    padding-top:50px;
+}
+#contact .contact .form input{
+    width:550px;
+    height:50px;
+    margin:10px 0;
+    border:none;
+    border:1px solid #ccc;
+}
+#contact .contact .form input:nth-of-type(3){
+    height:200px;
+}
+#contact .contact .form input:nth-of-type(4){
+    background-color:#fba311;
+    color:#ffffff;
+    height:50px;
+    line-height:50px;
+    font-size:20px;
+}
+#contact .contact .form input:nth-of-type(4):hover{
+    background-color:#01a4e4;
+}
+#contact .contact .contactStyle{
+    width:550px;
+    height:400px;
+    float:right;
+    text-align:left;
+    margin-right:20px;
+    padding-top:50px;
+}
+#contact .contact .contactStyle p{
+    word-spacing:5px;
+    height:100px;
+    line-height:30px;
+    padding-bottom:150px;
+}
+#contact .contact .contactStyle li{
+    line-height:30px;
+}
+#contact .contact .contactStyle li .glyphicon{
+    color:#fba311;
+    font-size:16px;
+}
+#contact .contact .contactStyle li span:nth-of-type(2){
+    padding-left:20px;
+}
+#contact .contact .contactStyle li span{
+    font-size:18px;
+}
+#map{
+    width:100%;
+    height:600px;
+    margin-top:100px;
+}
+#map .map{
+    width:1200px;
+    height:600px;
+    margin:0 auto;
+    text-align:center;
+}
+#map .map #allmap{
+    padding-top:100px;
+    width:1200px;
+    height:520px;
+    overflow:hidden;
+}
+#map .map h2{
+    font-size:40px;
+    color:#01a4e4;
+    padding-bottom:27px;
+}
+footer{
+    width:100%;
+    height:600px;
+    background-color:#253b50;
+    text-align:center;
+}
+footer .foot{
+    width:1200px;
+    height:600px;
+    margin:0 auto;
+    color:#cccccc;
+    text-align:left;
+    letter-spacing:1px;
+    word-spacing:2px;
+}
+footer .foot h2{
+    color:#ffffff;
+}
+footer .foot .h22{
+    width:50px;
+    height:20px;
+    border-top:2px solid #01a4e4; 
+}
+footer .foot .foot-child{
+   width:600px;
+   height:300px;
+   padding-top:100px;
+}
+footer .foot .foot-child1{
+   width:600px;
+   height:200px;
+   line-height:100px;
+   border-top:1px solid #ffffff;
+}
+footer .foot .foot-child2{
+   width:600px;
+   height:500px;
+   border-left:1px solid #ffffff;
+   float:right;
+   margin-top:-500px;
+   line-height:20px;
+   padding-left:30px;
+   padding-top:100px;
+}
+footer .foot .foot-child2 input{
+    height:40px;
+    width:200px;
+    background-color:#253b50;
+    border:none;
+    border:1px solid #ffffff;
+    margin-top:20px;
+}
+footer .foot .foot-child2 .emal-bottom{
+    color:#ffffff;
+    transition:1s;
+}
+footer .foot .foot-child2 .emal-bottom:hover{
+    color:#fda30e;
+}
+footer .foot .foot-child2 .ct span{
+    border:1px solid #ccc;
+    padding:10px;
+    color:#01a4e4;
+    margin-top:20px;
+}
+footer .foot .foot-child2 .ct span:hover{
+    border:1px solid #ccc;
+    padding:10px;
+    color:#fda30e;
+}
+footer .foot .foot-child2 input:nth-of-type(3){
+    background-color:#fda30e;
+    border:none;
+    font-size:18px;
+    font-weight:bold;
+    height:40px;
+    line-height:40px;
+}
+footer .foot .foot-child2 input:nth-of-type(3):hover{
+   background-color:#01a4e4;
+}

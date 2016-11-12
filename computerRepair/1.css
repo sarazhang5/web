@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2016-07-29 17:55:37
 * @Last Modified by:   Marte
-* @Last Modified time: 2016-10-21 16:08:05
+* @Last Modified time: 2016-11-11 13:33:53
 */
 html{
     font-size:62.5%;
@@ -216,4 +216,45 @@ footer{
     background-color:rgb(224,249,255);
     padding:0.03rem 0;
     margin-left:-0.01rem;
+}
+/*媒体查询，大于480px 小于640px*/
+@media(min-width:480px) and (max-width:640px){
+     nav ul li a{
+        color:red;
+    }
+}
+/*媒体查询，小于480px*/
+@media(max-width:320px){
+   header{
+    width:30rem;
+    border:0.1rem solid red;
+   }
+   header .logo{
+    width:30rem;
+    border:0.1rem solid red;
+   }
+   header .logo img{
+    width:5rem;
+    height:5rem;
+    border:0.1rem solid red;
+   }
+   header .logo hground h1{
+    font-size:1.6rem;
+   }
+   header .logo hground h2{
+    font-size:1.2rem;
+   }
+   nav{
+    width:30rem;
+   }
+   nav ul{
+    padding-left:0;
+   }
+   nav li a{
+    padding:0.001rem;
+    font-size:1.0rem;
+   }
+   nav li span{
+    padding-left:0.01rem;
+   }
 }
