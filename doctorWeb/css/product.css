@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2016-11-10 12:08:44
 * @Last Modified by:   Marte
-* @Last Modified time: 2016-11-14 14:46:21
+* @Last Modified time: 2016-11-14 15:31:30
 */
 body{
     overflow-x:hidden;
@@ -261,6 +261,10 @@ li{
     text-align:center;
     font-size:40px;
 }
+#product a{
+    text-decoration:none;
+    color:#ffffff;
+}
 #product .product{
     width:1200px;
     height:auto;
@@ -291,6 +295,28 @@ li{
     transition:2s;
     opacity:0;
     transform:translateX(-300px) rotate(0deg);
+}
+#product .product .buy{
+    position: absolute;
+    top:50%;
+    left:42%;
+    color:#ffffff;
+    font-size:25px;
+    font-weight:bolder;
+    transition:2s;
+    opacity:0;
+    transform:translateZ(400px) rotateX(0deg);
+    cursor:pointer;
+}
+#product .product li:hover .buy{
+     opacity:1;
+     transform:translateZ(0px) rotateX(360deg);
+}
+#product .product ul li .buy{
+    position: absolute;
+    top:50%;
+    left:35%;
+    cursor:pointer;
 }
 #product .product ul li{
     position: relative;
