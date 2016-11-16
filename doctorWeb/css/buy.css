@@ -1,0 +1,38 @@
+/* 
+* @Author: Marte
+* @Date:   2016-11-16 13:30:39
+* @Last Modified by:   Marte
+* @Last Modified time: 2016-11-16 19:54:00
+*/
+#buyProduct{
+    width:100%;
+    display:table;
+}
+#buyProduct .buyProduct{
+    width:1200px;
+    height:750px;
+    margin:0 auto;
+    text-align:left;
+    display: table-cell;
+    vertical-align: middle;    
+}
+#buyProduct .buyProduct h2{
+    color:#01a4e4;
+}
+#buyProduct .buyProduct .productName span{
+    border-bottom:4px solid #01a4e4;
+    width:200px;
+    display:inline-block;
+    text-align:center;
+}
+#buyProduct .buyProduct .productPrice span{
+    width:200px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+}
+#buyProduct .buyProduct .productPrice span img{
+    width:150px;
+    height:150px;
+}
