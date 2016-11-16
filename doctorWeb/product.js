@@ -8,7 +8,6 @@ window.onload=function(){
         aliProduct[i].onclick=function(){
             var big="big";
             var aUrl=aimgProduct[this.index].src;
-            alert(aUrl);
             document.cookie=big+'='+aUrl;
         }
 }

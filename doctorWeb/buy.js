@@ -2,7 +2,11 @@
 * @Author: Marte
 * @Date:   2016-11-16 16:00:26
 * @Last Modified by:   Marte
+<<<<<<< HEAD
 * @Last Modified time: 2016-11-16 18:55:14
+=======
+* @Last Modified time: 2016-11-16 20:57:43
+>>>>>>> master
 */
 window.onload=function(){
     function getCookie(name){
