@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2016-11-10 12:08:44
 * @Last Modified by:   Marte
-* @Last Modified time: 2016-11-14 15:31:30
+* @Last Modified time: 2016-11-17 12:25:59
 */
 body{
     overflow-x:hidden;
@@ -315,7 +315,7 @@ li{
 #product .product ul li .buy{
     position: absolute;
     top:50%;
-    left:35%;
+    left:30%;
     cursor:pointer;
 }
 #product .product ul li{

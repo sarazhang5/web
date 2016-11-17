@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2016-11-16 13:30:39
 * @Last Modified by:   Marte
-* @Last Modified time: 2016-11-16 19:54:00
+* @Last Modified time: 2016-11-17 15:41:25
 */
 #buyProduct{
     width:100%;
@@ -24,15 +24,54 @@
     width:200px;
     display:inline-block;
     text-align:center;
+    color:#fda30e;
+}
+#buyProduct .buyProduct .productPrice{
+    text-align:;
 }
 #buyProduct .buyProduct .productPrice span{
-    width:200px;
-    height:40px;
-    line-height:40px;
+    width:199px;
+    height:100%;
+    line-height:100%;
     display:inline-block;
     text-align:center;
 }
+#buyProduct .buyProduct .productPrice span:nth-of-type(1){
+    text-align:left;
+}
+#buyProduct .buyProduct .productPrice span em{
+    font-style:normal;
+    padding-left:40px;
+    color:#01a4e4;
+    font-weight:bolder;
+}
+#buyProduct .buyProduct .productPrice span i{
+    width:20px;
+    height:20px;
+    line-height:20px;
+    font-style:normal;
+    display:inline-block;
+    border:1px solid #ccc;
+    cursor:pointer;
+    -moz-user-select: none;
+   -khtml-user-select: none;
+    user-select: none;
+}
 #buyProduct .buyProduct .productPrice span img{
-    width:150px;
-    height:150px;
+    width:100px;
+    height:100px;
+}
+#buyProduct .buyProduct .buyBtn{
+    text-align:center;
+    margin-top:100px;
+}
+#buyProduct .buyProduct .buyBtn input{
+    width:140px;
+    height:40px;
+    line-height:40px;
+    background-color:#fda30e;
+    color:#fff;
+    border:none;
+    font-size:20px;
+    cursor:pointer;
 }
