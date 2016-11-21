@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2016-10-25 20:50:24
 * @Last Modified by:   Marte
-* @Last Modified time: 2016-11-10 12:10:41
+* @Last Modified time: 2016-11-21 16:37:57
 */
 body{
     overflow-x:hidden;
@@ -229,9 +229,14 @@ li{
 .nv1{
     position: relative;
 }
-.nv1 em{
+.nv1 span em{
     font-style:normal;
     color:#000;
+    display:inline-block;
+    transition:1s;
+}
+.nv1 span:hover em{
+    transform:rotateY(180deg);
 }
 .nv1 span{
     font-size:35px;
@@ -239,6 +244,7 @@ li{
     position: absolute;
     left:40px;
     color:#fba311;
+    cursor:pointer;
 }
 .nv1 ul{
     float:right;
