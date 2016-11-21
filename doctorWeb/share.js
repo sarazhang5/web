@@ -2,11 +2,18 @@
 * @Author: Marte
 * @Date:   2016-11-10 12:11:23
 * @Last Modified by:   Marte
+<<<<<<< HEAD
+* @Last Modified time: 2016-11-16 20:10:49
+*/
+window.onload=function(){
+    //弹出登陆框并加遮罩层
+=======
 * @Last Modified time: 2016-11-17 10:29:22
 */
 window.onload=function(){
     //弹出登陆框并加遮罩层
     alert('a');
+>>>>>>> refs/remotes/origin/master
      var oHeader=document.getElementsByTagName('header')[0];
      var oHeading=oHeader.getElementsByTagName('div')[0];
      var oLogin=oHeading.getElementsByTagName('div')[4];

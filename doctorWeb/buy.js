@@ -2,7 +2,15 @@
 * @Author: Marte
 * @Date:   2016-11-16 16:00:26
 * @Last Modified by:   Marte
+<<<<<<< HEAD
+<<<<<<< HEAD
+* @Last Modified time: 2016-11-16 18:55:14
+=======
+* @Last Modified time: 2016-11-16 20:57:43
+>>>>>>> master
+=======
 * @Last Modified time: 2016-11-17 16:08:49
+>>>>>>> refs/remotes/origin/master
 */
 window.onload=function(){
     //获取cookie并输出展示
